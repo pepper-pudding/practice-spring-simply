@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>save</title>
+    <link rel="stylesheet" href="../static/css/save.css">
+</head>
+<body>
+<form action="/board/save" method="post" enctype="multipart/form-data">
+    <label for="boardWriter">Writer:</label>
+    <input type="text" id="boardWriter" name="boardWriter"> <br>
+
+    <label for="boardPass">Pass:</label>
+    <input type="text" id="boardPass" name="boardPass"> <br>
+
+    <label for="boardTitle">Title:</label>
+    <input type="text" id="boardTitle" name="boardTitle"> <br>
+
+    <label for="boardContents">Contents:</label>
+    <textarea id="boardContents" name="boardContents" cols="30" rows="10"></textarea> <br>
+
+    <label for="boardFile">File:</label>
+    <input type="file" id="boardFile" name="boardFile"> <br>
+
+    <input type="submit" value="글작성">
+</form>
+</body>
+</html>
